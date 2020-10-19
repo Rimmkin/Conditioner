@@ -13,7 +13,7 @@ class ConditionerTest {
         conditioner.setName("Conditioner");
     }
 
-    //температура в пределах!
+    //температура в пределах
     @Test
     void setCurrentTemperature() {
         fixValue();
@@ -21,7 +21,7 @@ class ConditionerTest {
         assertEquals(20, conditioner.getCurrentTemperature());
     }
 
-    //повышение на 1 градус!
+    //повышение на 1 градус
     @Test
     public void shouldIncreaseCurrentTemperature() {
         fixValue();
@@ -30,7 +30,7 @@ class ConditionerTest {
         assertEquals(24, conditioner.getCurrentTemperature());
     }
 
-    //повышение температуры на максимуме!
+    //повышение температуры на максимуме
     @Test
     public void shouldIncreaseCurrentTemperaturMax() {
         fixValue();
@@ -39,7 +39,7 @@ class ConditionerTest {
         assertEquals(30, conditioner.getCurrentTemperature());
     }
 
-    //понижение на 1 градус!
+    //понижение на 1 градус
     @Test
     public void shouldDecreaseCurrentTemperature() {
         fixValue();
@@ -49,7 +49,7 @@ class ConditionerTest {
     }
 
 
-    //понижение температуры на минимуме!
+    //понижение температуры на минимуме
     @Test
     void setDecreaseCurrentTemperatureMin() {
         fixValue();
